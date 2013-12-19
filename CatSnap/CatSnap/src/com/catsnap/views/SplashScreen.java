@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.catsnap.constant.AppConstants;
+import com.parse.Parse;
 
 public class SplashScreen extends BaseActity {
 
@@ -12,8 +13,14 @@ public class SplashScreen extends BaseActity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.splash_screen);
+		initializeParser();
 		startSplashTimer();
 
+	}
+
+	private void initializeParser() {
+		Parse.initialize(this, AppConstants.PARSE_APP_ID,
+				AppConstants.PARSE_CLIENT_ID);
 	}
 
 	private void startSplashTimer() {

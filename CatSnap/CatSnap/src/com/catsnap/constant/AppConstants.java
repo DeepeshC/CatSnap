@@ -1,10 +1,11 @@
 package com.catsnap.constant;
 
-
-
 public class AppConstants {
 	public static final String APP_TAG = "CAT_SNAP";
 	public static int SPLASH_TIME_OUT = 3000;
+	public static String PARSE_APP_ID = "AHfbc0mWF0LCMIv8LHX28cKlyFyR6VcFWI4ezEtz";
+	public static String PARSE_CLIENT_ID = "LsFtZlyPkzJloxKydRHTJBpoIrb1d8tKOog3T0QF";
+
 	/** The url enum. */
 	public enum ApiEnum {
 		// MEMBER_LOGIN("api/CustomerLogin"),
@@ -24,14 +25,14 @@ public class AppConstants {
 				"api/RegisterCustomer", "profileCollection"), MEMBER_REGISTER_UPDATE(
 				"api/UpdateCustomerProfile", "profileCollection"), TERMSANDSERVICE(
 				"api/getTermsOfService", "termsofserviceCollection"), PRIVACYPOLICY(
-				"api/getPrivacyPolicy", "privacyCollection"), LOGOUT("api/customerLogout",
-				"logoutCollection"), RELATEDMERCHANTS(
+				"api/getPrivacyPolicy", "privacyCollection"), LOGOUT(
+				"api/customerLogout", "logoutCollection"), RELATEDMERCHANTS(
 				"api/getrelatedmerchants", "merchantCollection"), UPDATESTATUSFLAG(
 				"api/updateSendMeDealsFlag", "merchantCollection"), DEAL_COLLECTION(
 				"api/getdeals", "ObjectNameKey.DEAL_COLLECTION"), CUSTOMER_INBOX(
 				"api/getCustomerInboxEntries", "customerInbox"), DEALDETILS(
-				"api/getDealDetails", "dealCollection"), DEALREDEEM("api/RedeemDeal",
-				"dealRedemptionDetails"), GET_CUSTOMER_PROFILE(
+				"api/getDealDetails", "dealCollection"), DEALREDEEM(
+				"api/RedeemDeal", "dealRedemptionDetails"), GET_CUSTOMER_PROFILE(
 				"api/getCustomerProfile", "profileCollection"), NOTIFICATION_STATUS(
 				"api/updateSendMeDealsFlag", "merchantCollection"), UPADATE_INBOX_ENTRY(
 				"api/updateInboxEntryStatus", "unreadInboxItemsCount"), CUSTOMER_INBOX_UNREAD_MESSAGE_COUNT(
@@ -40,7 +41,10 @@ public class AppConstants {
 				"api/deleteRelatedMerchant", "merchantCollection"), MARK_UNMARK_DEAL(
 				"api/markUnmarkDealAsSaved", "merchantCollection"), GET_CATEGORIES(
 				"api/getAllCategories", "ObjectNameKey.CATEGORIES_COLLECTION"), GET_ALL_DEAL_LOCATIONS(
-				"api/getAllDealLocations", "dealCollection"), MARK_MERCHANT_RELATED("api/markMerchantAsRelated", "ObjectNameKey.MERCHANT_COLLECTION"),GAME_DEAL_REWARD("api/GetGameDealReward", "gameDealReward");
+				"api/getAllDealLocations", "dealCollection"), MARK_MERCHANT_RELATED(
+				"api/markMerchantAsRelated",
+				"ObjectNameKey.MERCHANT_COLLECTION"), GAME_DEAL_REWARD(
+				"api/GetGameDealReward", "gameDealReward");
 
 		private String value;
 		private String objectTag;
