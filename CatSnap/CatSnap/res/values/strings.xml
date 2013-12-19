@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CatSnap</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="email">Email</string>
+    <string name="forgot_password">Forgot your password ?</string>
+    <string name="you_can_also_login">You can also login with:</string>
+    <string name="dont_have_an_account_yet">Don\'t have an account yet?</string>
+    <string name="privacy_policy">privacy policy - terms and conditions</string>
+    <string name="menu_settings">privacy policyterms and conditions</string>
+    <string name="back">Back</string>
+
+</resources>
